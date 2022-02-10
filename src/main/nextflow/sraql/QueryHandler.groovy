@@ -17,7 +17,13 @@
 
 package nextflow.sraql
 
-import com.google.cloud.bigquery.*
+import com.google.cloud.bigquery.BigQuery
+import com.google.cloud.bigquery.BigQueryOptions
+import com.google.cloud.bigquery.FieldValue
+import com.google.cloud.bigquery.JobId
+import com.google.cloud.bigquery.JobInfo
+import com.google.cloud.bigquery.QueryJobConfiguration
+import com.google.cloud.bigquery.TableResult
 import groovy.json.JsonSlurper
 import groovy.transform.CompileStatic
 import groovy.util.logging.Slf4j
