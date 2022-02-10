@@ -4,7 +4,7 @@ import nextflow.plugin.BasePlugin
 import org.pf4j.PluginWrapper
 
 /**
- * Implements SQL plugin for Nextflow
+ * Implements SraQL plugin for Nextflow
  *
  * @author Abhinav Sharma <abhi18av@outlook.com>
  */

@@ -41,7 +41,7 @@ class SraqlDslTest extends BaseSpec {
         def SCRIPT = '''
             def bioProjectId = 'PRJNA494931'
             def sraql = "SELECT *  FROM `nih-sra-datastore.sra.metadata` WHERE  bioproject='$bioProjectId';"
-            channel.sraql.fromQuery(sraql)
+            Channel.sraql.fromQuery(sraql)
             '''
         and:
         def result = new MockScriptRunner(config).setScript(SCRIPT).execute()

@@ -29,10 +29,12 @@ import groovy.transform.ToString
 @EqualsAndHashCode
 class SraqlDataSource {
 
-    def SRAQL_SOURCES = [
-            GOOGLE: 'google-bigquery',
-            AWS   : 'aws-athena'
-    ]
+    static public final Map<String,String> SRAQL_SOURCES = [:]
+
+    static {
+        SRAQL_SOURCES.GOOGLE = 'google-bigquery'
+        SRAQL_SOURCES.AWS = 'aws-athena'
+    }
 
     String source
 
